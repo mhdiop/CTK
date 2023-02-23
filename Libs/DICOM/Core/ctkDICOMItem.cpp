@@ -848,14 +848,14 @@ QString ctkDICOMItem::TranslateDefinedTermPatientPosition( const QString& dt )
   static QMap<QString, QString> descriptionOfTerms;
   if (!initialized)
   {
-    descriptionOfTerms.insert("HFP",  "Head First - Prone");
-    descriptionOfTerms.insert("HFDR", "Head First - Decubitus Right");
-    descriptionOfTerms.insert("FFDR", "Feet First - Decubitus Right");
-    descriptionOfTerms.insert("FFP",  "Feet First - Prone");
-    descriptionOfTerms.insert("HFS",  "Head First - Supine");
-    descriptionOfTerms.insert("HFDL", "Head First - Decubitus Left");
-    descriptionOfTerms.insert("FFDL", "Feet First - Decubitus Left");
-    descriptionOfTerms.insert("FFS",  "Feet First - Supine");
+    descriptionOfTerms.insert("HFP",  QObject::tr("Head First - Prone"));
+    descriptionOfTerms.insert("HFDR", QObject::tr("Head First - Decubitus Right"));
+    descriptionOfTerms.insert("FFDR", QObject::tr("Feet First - Decubitus Right"));
+    descriptionOfTerms.insert("FFP",  QObject::tr("Feet First - Prone"));
+    descriptionOfTerms.insert("HFS",  QObject::tr("Head First - Supine"));
+    descriptionOfTerms.insert("HFDL", QObject::tr("Head First - Decubitus Left"));
+    descriptionOfTerms.insert("FFDL", QObject::tr("Feet First - Decubitus Left"));
+    descriptionOfTerms.insert("FFS",  QObject::tr("Feet First - Supine"));
     initialized = true;
   }
 
@@ -876,72 +876,72 @@ QString ctkDICOMItem::TranslateDefinedTermModality( const QString& dt )
   static QMap<QString, QString> descriptionOfTerms;
   if (!initialized)
   {
-    descriptionOfTerms.insert("CR",  "Computed Radiography");
-    descriptionOfTerms.insert("CT",  "Computed Tomography");
-    descriptionOfTerms.insert("MR",  "Magnetic Resonance");
-    descriptionOfTerms.insert("NM",  "Nuclear Medicine");
-    descriptionOfTerms.insert("US",  "Ultrasound");
-    descriptionOfTerms.insert("OT",  "Other");
-    descriptionOfTerms.insert("BI",  "Biomagnetic imaging");
-    descriptionOfTerms.insert("CD",  "Color flow Doppler");
-    descriptionOfTerms.insert("DD",  "Duplex Doppler");
-    descriptionOfTerms.insert("ES",  "Endoscopy");
-    descriptionOfTerms.insert("LS",  "Laser surface scan");
-    descriptionOfTerms.insert("PT",  "Positron emission tomography (PET)");
-    descriptionOfTerms.insert("RG",  "Radiographic imaging (conventional film/screen)");
-    descriptionOfTerms.insert("ST",  "Single-photon emission computed tomograpy (SPECT)");
-    descriptionOfTerms.insert("TG",  "Thermography");
-    descriptionOfTerms.insert("XA",  "X-Ray Aniography");
-    descriptionOfTerms.insert("RF",  "Radio Fluoroscopy");
-    descriptionOfTerms.insert("RTIMAGE",  "Radiotherapy Image");
-    descriptionOfTerms.insert("RTDOSE",  "Radiotherapy Dose");
-    descriptionOfTerms.insert("RTSTRUCT",  "Radiotherapy Structure Set");
-    descriptionOfTerms.insert("RTPLAN",  "Radiotherapy Plan");
-    descriptionOfTerms.insert("RTRECORD",  "RT Treatment Record");
-    descriptionOfTerms.insert("HC",  "Hard Copy");
-    descriptionOfTerms.insert("DX",  "Digital Radiography");
-    descriptionOfTerms.insert("MG",  "Mammography");
-    descriptionOfTerms.insert("IO",  "Intra-oral Radiography");
-    descriptionOfTerms.insert("PX",  "Panoramic X-Ray");
-    descriptionOfTerms.insert("GM",  "General Microscopy");
-    descriptionOfTerms.insert("SM",  "Slide Microscopy");
-    descriptionOfTerms.insert("XC",  "External-camera Photography");
-    descriptionOfTerms.insert("PR",  "Presentation state");
-    descriptionOfTerms.insert("AU",  "Audio");
-    descriptionOfTerms.insert("ECG",  "Electrocardiography");
-    descriptionOfTerms.insert("EPS",  "Cardiac Electrophysiology");
-    descriptionOfTerms.insert("HD",  "Hemodynamic Waveform");
-    descriptionOfTerms.insert("SR",  "SR Document");
-    descriptionOfTerms.insert("IVUS",  "Intravascular Ultrasound");
-    descriptionOfTerms.insert("OP",  "Ophthalmic Photography");
-    descriptionOfTerms.insert("SMR",  "Stereometric Relationship");
-    descriptionOfTerms.insert("OCT",  "Optical Coherence Tomography (non-Ophthalmic)");
-    descriptionOfTerms.insert("OPR",  "Ophthalmic Refraction");
-    descriptionOfTerms.insert("OPV",  "Ophthalmic Visual Field");
-    descriptionOfTerms.insert("OPM",  "Ophthalmic Mapping");
-    descriptionOfTerms.insert("KO",  "Key Object Selection");
-    descriptionOfTerms.insert("SEG",  "Segmentation");
-    descriptionOfTerms.insert("REG",  "Registration");
-    descriptionOfTerms.insert("OPT",  "Ophthalmic Tomography");
-    descriptionOfTerms.insert("BDUS",  "Bone Densitometry (ultrasound)");
-    descriptionOfTerms.insert("BMD",  "Bone Densitometry (X-Ray)");
-    descriptionOfTerms.insert("DOC",  "Document");
+    descriptionOfTerms.insert("CR",  QObject::tr("Computed Radiography"));
+    descriptionOfTerms.insert("CT",  QObject::tr("Computed Tomography"));
+    descriptionOfTerms.insert("MR",  QObject::tr("Magnetic Resonance"));
+    descriptionOfTerms.insert("NM",  QObject::tr("Nuclear Medicine"));
+    descriptionOfTerms.insert("US",  QObject::tr("Ultrasound"));
+    descriptionOfTerms.insert("OT",  QObject::tr("Other"));
+    descriptionOfTerms.insert("BI",  QObject::tr("Biomagnetic imaging"));
+    descriptionOfTerms.insert("CD",  QObject::tr("Color flow Doppler"));
+    descriptionOfTerms.insert("DD",  QObject::tr("Duplex Doppler"));
+    descriptionOfTerms.insert("ES",  QObject::tr("Endoscopy"));
+    descriptionOfTerms.insert("LS",  QObject::tr("Laser surface scan"));
+    descriptionOfTerms.insert("PT",  QObject::tr("Positron emission tomography (PET)"));
+    descriptionOfTerms.insert("RG",  QObject::tr("Radiographic imaging (conventional film/screen)"));
+    descriptionOfTerms.insert("ST",  QObject::tr("Single-photon emission computed tomograpy (SPECT)"));
+    descriptionOfTerms.insert("TG",  QObject::tr("Thermography"));
+    descriptionOfTerms.insert("XA",  QObject::tr("X-Ray Aniography"));
+    descriptionOfTerms.insert("RF",  QObject::tr("Radio Fluoroscopy"));
+    descriptionOfTerms.insert("RTIMAGE",  QObject::tr("Radiotherapy Image"));
+    descriptionOfTerms.insert("RTDOSE",  QObject::tr("Radiotherapy Dose"));
+    descriptionOfTerms.insert("RTSTRUCT",  QObject::tr("Radiotherapy Structure Set"));
+    descriptionOfTerms.insert("RTPLAN",  QObject::tr("Radiotherapy Plan"));
+    descriptionOfTerms.insert("RTRECORD",  QObject::tr("RT Treatment Record"));
+    descriptionOfTerms.insert("HC",  QObject::tr("Hard Copy"));
+    descriptionOfTerms.insert("DX",  QObject::tr("Digital Radiography"));
+    descriptionOfTerms.insert("MG",  QObject::tr("Mammography"));
+    descriptionOfTerms.insert("IO",  QObject::tr("Intra-oral Radiography"));
+    descriptionOfTerms.insert("PX",  QObject::tr("Panoramic X-Ray"));
+    descriptionOfTerms.insert("GM",  QObject::tr("General Microscopy"));
+    descriptionOfTerms.insert("SM",  QObject::tr("Slide Microscopy"));
+    descriptionOfTerms.insert("XC",  QObject::tr("External-camera Photography"));
+    descriptionOfTerms.insert("PR",  QObject::tr("Presentation state"));
+    descriptionOfTerms.insert("AU",  QObject::tr("Audio"));
+    descriptionOfTerms.insert("ECG",  QObject::tr("Electrocardiography"));
+    descriptionOfTerms.insert("EPS",  QObject::tr("Cardiac Electrophysiology"));
+    descriptionOfTerms.insert("HD",  QObject::tr("Hemodynamic Waveform"));
+    descriptionOfTerms.insert("SR",  QObject::tr("SR Document"));
+    descriptionOfTerms.insert("IVUS",  QObject::tr("Intravascular Ultrasound"));
+    descriptionOfTerms.insert("OP",  QObject::tr("Ophthalmic Photography"));
+    descriptionOfTerms.insert("SMR",  QObject::tr("Stereometric Relationship"));
+    descriptionOfTerms.insert("OCT",  QObject::tr("Optical Coherence Tomography (non-Ophthalmic)"));
+    descriptionOfTerms.insert("OPR",  QObject::tr("Ophthalmic Refraction"));
+    descriptionOfTerms.insert("OPV",  QObject::tr("Ophthalmic Visual Field"));
+    descriptionOfTerms.insert("OPM",  QObject::tr("Ophthalmic Mapping"));
+    descriptionOfTerms.insert("KO",  QObject::tr("Key Object Selection"));
+    descriptionOfTerms.insert("SEG",  QObject::tr("Segmentation"));
+    descriptionOfTerms.insert("REG",  QObject::tr("Registration"));
+    descriptionOfTerms.insert("OPT",  QObject::tr("Ophthalmic Tomography"));
+    descriptionOfTerms.insert("BDUS",  QObject::tr("Bone Densitometry (ultrasound)"));
+    descriptionOfTerms.insert("BMD",  QObject::tr("Bone Densitometry (X-Ray)"));
+    descriptionOfTerms.insert("DOC",  QObject::tr("Document"));
 
     // retired terms (but probably still in use)
-    descriptionOfTerms.insert("DS",  "Digital Subtraction Angiography");
-    descriptionOfTerms.insert("CF",  "Cinefluorography");
-    descriptionOfTerms.insert("DF",  "Digital fluoroscopy");
-    descriptionOfTerms.insert("VF",  "Videofluorography");
-    descriptionOfTerms.insert("AS",  "Angioscopy");
-    descriptionOfTerms.insert("CS",  "Cystoscopy");
-    descriptionOfTerms.insert("EC",  "Echocardiography");
-    descriptionOfTerms.insert("LP",  "Laparoscopy");
-    descriptionOfTerms.insert("FA",  "Fluorescein angiography ");
-    descriptionOfTerms.insert("CP",  "Culposcopy");
-    descriptionOfTerms.insert("DM",  "Digital microscopy");
-    descriptionOfTerms.insert("FS",  "Fundoscopy");
-    descriptionOfTerms.insert("MA",  "Magnetic resonance angiography");
-    descriptionOfTerms.insert("MS",  "Magnetic resonance spectroscopy");
+    descriptionOfTerms.insert("DS",  QObject::tr("Digital Subtraction Angiography"));
+    descriptionOfTerms.insert("CF",  QObject::tr("Cinefluorography"));
+    descriptionOfTerms.insert("DF",  QObject::tr("Digital fluoroscopy"));
+    descriptionOfTerms.insert("VF",  QObject::tr("Videofluorography"));
+    descriptionOfTerms.insert("AS",  QObject::tr("Angioscopy"));
+    descriptionOfTerms.insert("CS",  QObject::tr("Cystoscopy"));
+    descriptionOfTerms.insert("EC",  QObject::tr("Echocardiography"));
+    descriptionOfTerms.insert("LP",  QObject::tr("Laparoscopy"));
+    descriptionOfTerms.insert("FA",  QObject::tr("Fluorescein angiography "));
+    descriptionOfTerms.insert("CP",  QObject::tr("Culposcopy"));
+    descriptionOfTerms.insert("DM",  QObject::tr("Digital microscopy"));
+    descriptionOfTerms.insert("FS",  QObject::tr("Fundoscopy"));
+    descriptionOfTerms.insert("MA",  QObject::tr("Magnetic resonance angiography"));
+    descriptionOfTerms.insert("MS",  QObject::tr("Magnetic resonance spectroscopy"));
     initialized = true;
   }
 
@@ -969,10 +969,10 @@ QString ctkDICOMItem::TagKeyStripped( const DcmTag& tag )
 QString ctkDICOMItem::TagDescription( const DcmTag& tag )
 {
   if (!dcmDataDict.isDictionaryLoaded())
-    return QString("<no DICOM dictionary loaded. application broken>");
+    return QString(QObject::tr("<no DICOM dictionary loaded. application broken>"));
   const DcmDataDictionary& globalDict = dcmDataDict.rdlock();
   const DcmDictEntry* entry = globalDict.findEntry(tag, NULL);
-  QString returnName("Unknown");
+  QString returnName = QObject::tr("Unknown");
   if (entry)
   {
     returnName = entry->getTagName();
@@ -987,7 +987,7 @@ QString ctkDICOMItem::TagDescription( const DcmTag& tag )
 
 QString ctkDICOMItem::TagVR( const DcmTag& tag )
 {
-  if (!dcmDataDict.isDictionaryLoaded()) return QString("<no DICOM dictionary loaded. application broken>");
+  if (!dcmDataDict.isDictionaryLoaded()) return QObject::tr("<no DICOM dictionary loaded. application broken>");
   const DcmDataDictionary& globalDataDict = dcmDataDict.rdlock();
   const DcmDictEntry* entry = globalDataDict.findEntry(tag, NULL);
   QString returnVR("UN");
